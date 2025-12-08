@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charlotte Hartline</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+
+    <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button class="sidebar-toggler" type="button">
+      &#9776; <!-- hamburger menu icon -->
+      </button>
+
+
+
+
+      <div class="main-content">
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+      
+              <!-- About Me Heading -->
+              <h1 class="text-center mb-4"><strong>About Me!</strong></h1>
+      
+              <!-- Image + Text Row -->
+              <div class="row align-items-center">
+      
+                <!-- Image Column (1/3) -->
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                  <img src="assets/about-world.png" alt="world icon" class="img-fluid" id="about-world" />
+                </div>
+      
+                <!-- Text Column (2/3) -->
+                <div class="col-12 col-md-8">
+                  <p>I am Charlotte Hartline, a computer and data science major currently studying at UW-Madison.</p>
+                  <p>You want a beautiful map? A beautiful website? You've come to the right place. Read all about my <a href="resume.html">background and experience</a>.</p>
+                  <p>I like playing tennis, cooking, music, and baking. Any chance I get, I will be spending time with my friends and family!</p>
+                </div>
+      
+              </div>
+            </div>
+      
+              <!-- Contact Info Section -->
+              <div class="row no-gutters text-center mt-3">
+                <!-- Email -->
+                <div class="col-md-4">
+                  <p class="mb-1"><strong>Email:</strong> chartline@wisc.edu</p>
+                </div>
+              
+                <!-- Number -->
+                <div class="col-md-4">
+                  <p class="mb-1"><strong>Number:</strong> (224) 548-4881</p>
+                </div>
+              
+                <!-- GitHub -->
+                <div class="col-md-4">
+                  <p class="mb-1"><strong>GitHub:</strong> charlottehartline</p>
+                </div>
+              </div>
+
+        
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+<div class="sidebar sidebar-dark border-end collapsed">
+    <div class="sidebar-header border-bottom">
+      <div class="sidebar-brand">Charlotte Hartline</div>
+    </div>
+    <ul class="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="home.html">
+              <i class="nav-icon cil-speedometer"></i> Home
+            </a>
+          </li>
+    
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">
+          <i class="nav-icon cil-speedometer"></i> About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">
+          <i class="nav-icon cil-cloud-download"></i> Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">
+          <i class="nav-icon cil-layers"></i>  Resume
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar-footer border-top d-flex">
+      <button class="sidebar-toggler" type="button"></button>
+    </div>
+
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+const toggler = document.querySelector(".sidebar-toggler");
+const sidebar = document.querySelector(".sidebar");
+
+toggler.addEventListener("click", function () {
+  sidebar.classList.toggle("collapsed");
+
+  if (sidebar.classList.contains("collapsed")) {
+    document.body.style.marginLeft = "0px";
+  } else {
+    document.body.style.marginLeft = "250px";
+  }
+});
+
+});
+</script>
+<script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+
+</html>

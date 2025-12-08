@@ -1,0 +1,317 @@
+/***** NAVBAR *****/
+
+.navbar {
+    background-color: #863ee3;
+    border-radius: 0;
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: px;
+    font-weight: bold;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ebd122;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Navbar collapsed styles */
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #863ee3;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #fff;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #ebd122;
+    color: #242424;
+    fill: #242424;
+    border-color: #fff;
+
+}
+
+/*** JUMBOTRON ***/
+
+.jumbotron {
+    background-image: url("../assets/contour-lines.png");
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    border-radius: 0px;
+}
+
+.jumbotron h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.img-responsive{
+    width:100%;
+}
+
+/*** CARD ***/
+
+.card {
+    background-color: #fff;
+    border-color: #cccccc;
+    border-width: 1px;
+    width: 100%;
+}
+
+.card:hover {
+    border-color: #ebd122;
+}
+
+/*** Basic Text Styles ***/
+
+#about-world {
+    max-height: 200px;
+}
+
+.resume h3 {
+    font-weight: bold;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+hr {
+    border-color: white;
+    border-width: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #863ee3;
+}
+
+a:hover {
+    color: #ebd122;
+}
+
+.container{
+    padding:25px 0;
+}
+
+body {
+
+    font-family: 'Georgia', serif;
+    background-color: #f7f1fa;
+    color: #242424;
+}
+/* Welcome Page Styling */
+
+.home-welcome-page {
+    margin-top: 5rem; /* optional spacing from top */
+    align-items: center;
+  }
+  
+  /* style.css */
+.learn-more {
+  background-color: #6667AB; /* custom background color */
+  color: white;              /* text/icon color */
+  border: none;              /* remove default border */
+  padding: 8px 14px;         /* spacing inside button */
+  border-radius: 4px;        /* rounded corners */
+  font-size: 1rem;         /* make the icon larger */
+  cursor: pointer;  
+  text-decoration: none;          /* show pointer on hover */
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.learn-more:hover {
+  background-color: #7575CF; /* hover color */
+}
+
+  /* Main name */
+ 
+  
+  /* Small 's */
+  .name-s {
+    font-size: 40%;
+    vertical-align: super;
+  }
+  
+  /* Left-aligned "Welcome to" at start of name */
+  .welcome-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .name-text {
+    font-size: 4rem; /* super large */
+    font-weight: bold;
+  }
+  
+  .portfolio-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .name-block {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* allows left/right alignment of p elements */
+  }
+
+.welcome-title {
+    display: flex;
+    justify-content: space-evenly;  /* equal spacing */
+    align-items: center;            /* vertical alignment */
+    text-align: center;
+
+}
+.home-links {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+}
+.home-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-links a:hover {
+  text-decoration: none;
+  color:  #7575CF;
+}
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  .center-content {
+    align-items: center
+  }
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #6667AB; /* dark */
+    color: white;
+    padding-top: 1rem;
+  }
+
+  .sidebar ul {
+    list-style-type: none;   /* removes bullets */
+    margin: 10px;               /* removes default margin */
+    padding: 10px;   
+    text-align: center;           /* removes default padding */
+  }
+
+  .sidebar-brand {
+    margin-top: 75px;   
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background-color: #7575CF;
+  }
+  
+  body {
+    margin-left: 250px; /* pushes your content to the right */
+  }
+
+  .sidebar.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.collapsed .sidebar-header,
+.sidebar.collapsed .sidebar-brand,
+.sidebar.collapsed .sidebar-nav,
+.sidebar.collapsed .sidebar-footer {
+  display: none;      /* completely removes text and links */
+}
+  
+  /* Hide ALL sidebar content when collapsed */
+  .sidebar.collapsed * {
+    transform: 0;
+  }
+  .sidebar-toggler {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-content {
+  margin-left: 250px; /* width of sidebar */
+  padding-top: 80px;  /* space for fixed toggle button */
+  transition: margin-left 0.3s;
+}
+
+.tight-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+}
+.container p {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-header {
+  margin-bottom: 20px; /* tighter gap */
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrollmap Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="./lib/scrollmap.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Niconne&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="content" style = "background-color: white">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-image:url(img/map_title_page.png)">
+            <div class="center title">
+                <!--title text-->
+                <h1 style="background-color: white">The Pigeon is on a Map!</h1>
+                <!--subtitle or author-->
+                <p style="background-color:white" class="author">Charlotte Hartline</p>
+            </div>
+        </div>
+        <!--text block-->
+        <div class="row">
+            <div class="center" style = "background-color: white">
+                <p>My style is called <b>The Pigeon is on a Map!</b> and is based on the style of the children's author and illustrator Mo Willems.</p>
+            </div>
+        </div>
+        <!--image block-->
+        <div class="row">
+            <div class="center" style = "background-color: white">
+                <img class="fit" src="img/inspo_pics.png">
+                <p>I drew inspiration from a few of my favorite characters from the Mo Willems universe.</p>
+                <p>I used some of the patterns, text, and colors from these photos as inspiration for my map.</p>
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row" style = "background-color: white">
+            <div class="left" style="margin-bottom: 20px">
+                <p class="vert-center" style = "background-color: white">In the map, pigeons represent big cities and capitals, and light yellow speech bubbles are highways and roads.</p>
+            </div>
+            <div class="right" style="margin-top: 10px">
+                <img class="fit" src="img/boston-zoomed-out.png">
+            </div>
+        </div>
+        <div class="row" style = "background-color: white">
+            <div class="left">
+                <img class="fit" src="img/boston-zoomed-in.png">
+            </div>
+            <div class="right">
+                <p class="vert-center" style = "background-color: white">When zoomed in, certain points of interest can be specified by different icons. Stars represent public areas related to general, park, education, and medical areas. 
+                    Purple dots represent places within the food and drink category. The pink speech bubble represent arts and entertainment, sports and leisure, and historic landmarks. </p>
+            </div>
+        </div>
+        </div>
+        <!--bootstrap carousel, centered-->
+        <div class="row">
+            <div class="center-wide">
+                <p>Here is what the map looks like at different zoom levels!</p>
+                <!--slideshow of images, also known as a carousel-->
+                <!--remove "carousel-dark" if you want a lighter version of the carousel-->
+                <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!--indicator buttons at the bottom of the carousel that show the total number of slides-->
+                    <div class="carousel-indicators">
+                        <!--there should be as many of these buttons as there are slides in your carousel-->
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <!--images in the carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/zoomed-out.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-1.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-2.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-3.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-4.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-5.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zoomed-out-6.png" class="w-100" alt="...">
+                        </div>
+                    </div>
+                    <!--previous/next buttons that allow users to click from one slide to the next-->
+                    <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center">Let's take a look at how the map looks at different locations with different geographies!</h2>
+        <!--background images with text scrolling over them-->
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <!--data-slide property used to specify when the background should first-->
+                <img src="img/madison.png" data-slide="0" class="fill vert-center">
+                <img src="img/japan.png" data-slide="1" class="fill vert-center hidden">
+                <img src="img/paris.png" data-slide="2" class="fill vert-center hidden">
+                <img src="img/rocky_mountain.png" data-slide="3" class="fill vert-center hidden">
+                <img src="img/yerba_buena_island.png" data-slide="4" class="fill vert-center hidden">
+                <img src="img/seattle-zoomed.png" data-slide="5" class="fill vert-center hidden">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item no-event">
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class = "no-margin">Here is Madison, Wisconsin!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">The Kanto region of Japan!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">Paris, France!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">Rocky Mountain National Park!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">Yerba Buena Island, San Francisco!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">Seattle, Washington! (Super zoomed in!)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mapbox iframe-->
+        <div class="row sm-margin">
+            <div class="center-wide">
+                <p>Check out the full map!</p>
+                <iframe width='100%' height='500px' src="https://api.mapbox.com/styles/v1/chartline/cmhasit1a001101ru1j550p7u.html?title=false&access_token=pk.eyJ1IjoiY2hhcnRsaW5lIiwiYSI6ImNtZ2t6cTZlYjBxYjAybm9rajZsNWlua2kifQ.1BZcxEcz_iVlv8vMhn1P4w&zoomwheel=false#0.44/1.2/-52.6" title="The Pigeon is on a Map!" style="border:none;"></iframe>
+            </div>
+        </div>
+        <!--text block-->
+        <div class="row no-margin">
+            <div class="center">
+                <div class="credits">
+                    <hr>
+                    <p><b>Credits:</b></p>
+                    <p>Map created with Mapbox Studio</p>
+                    <p>Data from openstreetmap</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="./lib/scrollmap.js"></script>
+<script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+
+</body>
+</html>
